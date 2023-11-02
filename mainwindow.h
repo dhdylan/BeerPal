@@ -18,10 +18,13 @@ public:
 
 private slots:
     void updateResult();
+    void setWaterValue(double value);
+    void setStarSanValue(double value);
 
 private:
     Ui::MainWindow *ui;
-    QButtonGroup waterVolumeButtonGroup;
-    QButtonGroup starsanVolumeButtonGroup;
+
+    double waterML;
+    double starsanML;
 };
 #endif // MAINWINDOW_H
