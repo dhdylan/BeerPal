@@ -1,12 +1,15 @@
 #ifndef UNITCONVERSION_H
 #define UNITCONVERSION_H
 
-enum Unit { Milliliter, Liter, Ounce, Gallon };
+
+
+enum class Unit { Milliliter, Liter, Ounce, Gallon };
 
 class UnitConversion
 {
 
 public:
+
     static double MilliliterToOunce(double ml);
     static double MilliliterToLiter(double ml);
     static double MilliliterToGallon(double ml);
